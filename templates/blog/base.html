@@ -7,15 +7,14 @@
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 </head>
 <body>
-    <div id="content">
-        {% block content %}
-            {#code blogs#}
-        {% endblock %}
-    </div>
-
-    <div id="sidebar">
-        <h2>IT News</h2>
-        <p>Information technology</p>
+    <div>
+        <main id="content">
+            {% block content %}
+            {% endblock %}
+        </main>
+        <aside id="sidebar">
+            <h3>Saidbar uchun</h3>
+        </aside>
     </div>
 </body>
 </html>
