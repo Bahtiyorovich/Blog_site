@@ -23,5 +23,3 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('blogapp.urls', namespace='blogapp')),
 ]
-
-urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

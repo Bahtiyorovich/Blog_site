@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 {% load static %}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,14 +7,17 @@
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 </head>
 <body>
-    <div>
-        <main id="content">
-            {% block content %}
-            {% endblock %}
-        </main>
+    <div class="grid__container">
         <aside id="sidebar">
             <h3>Saidbar uchun</h3>
         </aside>
+        <section id="content">
+            {% block content %}
+            {% endblock %}
+        </section>
+        <section id="reklama">
+            <h3>Reklama uchun joy</h3>
+        </section>
     </div>
 </body>
 </html>
